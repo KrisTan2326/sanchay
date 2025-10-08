@@ -1,5 +1,6 @@
 package com.socio.controller;
 
+
 import com.socio.model.User;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
@@ -39,4 +40,5 @@ public class AdminController {
             .count();
         return ResponseEntity.ok(Map.of("totalUsers", userCount));
     }
+
 }
