@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/api/v1/platform")
 @Tag(name = "1. Basic Platform", description = "Basic platform endpoints")
@@ -17,4 +18,5 @@ public class BasicPlatformController {
     public ResponseEntity<String> getStatus() {
         return ResponseEntity.ok("SOCIO Platform is up and running!");
     }
+
 }
