@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/platform")
 @Tag(name = "1. Basic Platform", description = "Basic platform endpoints")
 public class BasicPlatformController {
+
     
     @GetMapping("/status")
     @Operation(summary = "Check API Status", description = "A simple test endpoint to verify the application is running.")
@@ -17,6 +18,7 @@ public class BasicPlatformController {
     }
 
 }
+
 
 
 
